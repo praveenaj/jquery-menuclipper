@@ -39,11 +39,15 @@
             var itemsWidth = 0;
             var lastIndex = -1;
             var _this = this;
-            
+
             $menuItems.each(function(index) {
                 var itemWidth = $(this).actual('outerWidth', {
                     includeMargin: true
                 });
+                if(lastIndex > -1){
+                    $(this).addClass('hidden');
+                    return true; // continue onto next element
+                }
                 if (itemWidth + itemsWidth + _this.options.bufferWidth < cWidth) {
                     itemsWidth += itemWidth;
                     $(this).removeClass('hidden');
@@ -89,6 +93,9 @@
         });
     };
 
+    // TODO: Auto-init the plugin
+
+    // Resize handler
     var timeout;
     $(window).on('resize', function() {
         clearTimeout(timeout);
@@ -96,7 +103,7 @@
             var $menu = $('.menuclipper');
             $menu.each(function() {
                 var plugin = $(this).data("plugin_" + pluginName);
-                plugin.refresh();
+                plugin && plugin.refresh();
             });
         }, 100);
     });

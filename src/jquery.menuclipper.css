@@ -1,10 +1,9 @@
 .menuclipper{
 	width: 100%;
-	border:1px solid #ccc;
 }
 .menuclipper .menuclipper-menu{
 	display: table;
-	width: auto;
+	/*width: 100%;*/
 }
 .menuclipper-menu > li{
 	display: table-cell;
