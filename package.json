@@ -1,0 +1,21 @@
+{
+  "name": "jquery-menuclipper",
+  "title": "jQuery Menu Clipper",
+  "description": "Clips overflowing items from a navigation bar and adds them into a dropdown",
+  "author": "Praveena Sarathchandra",
+  "homepage": "https://github.com/praveenaj/jquery-menuclipper",
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "~0.1.7",
+    "grunt-contrib-jshint": "~0.4.3",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-copy": "^0.7.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-clean": "^0.6.0"
+  },
+  "scripts": {
+    "test": "grunt travis --verbose"
+  }
+}

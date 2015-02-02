@@ -1,0 +1,13 @@
+.menuclipper{
+	width: 100%;
+	border:1px solid #ccc;
+}
+.menuclipper .menuclipper-menu{
+	display: table;
+	width: auto;
+}
+.menuclipper-menu > li{
+	display: table-cell;
+	padding: 0 29px;
+	white-space: nowrap;
+}
