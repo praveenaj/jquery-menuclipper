@@ -34,7 +34,7 @@ module.exports = function(grunt) {
 		// Concat definitions
 		concat: {
 			dist: {
-				src: ["src/jquery.actual.js", "src/jquery.menuclipper.js"],
+				src: ["src/jquery.menuclipper.js"],
 				dest: "dist/jquery.menuclipper.js"
 			},
 			options: {
@@ -66,6 +66,10 @@ module.exports = function(grunt) {
 			css : {
 				src : 'src/jquery.menuclipper.css',
 				dest : 'dist/jquery.menuclipper.css'
+			},
+			js : {
+				src : 'src/jquery.actual.min.js',
+				dest : 'dist/jquery.actual.min.js'
 			},
 		}
 
